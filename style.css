@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: #2d3436;
+  /* background-image: linear-gradient(160deg, #2d3436 0%, #000000 60%); */
+  background: linear-gradient(360deg, #030303 0%, #1f1f1f 200%);
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.logo {
+  width: 40px;
+  margin: 30px 0;
+  cursor: pointer;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.pics {
+  position: relative;
+}
+
+.menu {
+  width: 8%;
+  margin: 30px 0;
+  color: white;
+  font-size: 222px;
+  transition: all 0.3s;
+  display: none;
+}
+
+/* .menu1 {
+  width: 222%;
+  margin: 30px 0;
+  color: white;
+  font-size: 222px;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+
+.menu:hover {
+  opacity: 0.7;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 100px;
+  transition: all 0.3s;
+}
+
+nav ul li:hover {
+  transform: translateY(-5px);
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+svg {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+svg:hover {
+  opacity: 0.7;
+}
+
+li:hover {
+  opacity: 0.7;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+  height: 500px;
+}
+
+.col-1 {
+  flex-basis: 40%;
+  color: white;
+  position: relative;
+  margin-left: 50px;
+}
+
+.col-1 h2 {
+  font-size: 54px;
+}
+
+.col-1 h3 {
+  font-size: 30px;
+  color: #707070;
+  font-weight: 100;
+  margin: 20px 0 15px;
+}
+
+.col-1 p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #b7b7b7;
+}
+
+.col-1 h4 {
+  margin: 40px 0 20px 0px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.button-66 {
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  border-radius: 4px;
+  border: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inherit;
+  font-family: "Space Grotesk", -apple-system, system-ui, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  min-height: 56px;
+  min-width: 120px;
+  padding: 16px 20px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all 0.3s;
+}
+
+.button-66:hover {
+  box-shadow: 0px 20px 20px -25px #fff;
+  transform: translateY(-3px);
+}
+
+@media (min-width: 768px) {
+  .button-66 {
+    padding: 16px 44px;
+    min-width: 150px;
+  }
+}
+
+.col-1::after {
+  content: "";
+  width: 10px;
+  height: 54%;
+  background: linear-gradient(315deg, #000000 0%, #414141 74%);
+  position: absolute;
+  left: -40px;
+  top: 8px;
+}
+
+.col-2 {
+  /* background-color: red; */
+  position: relative;
+  flex-basis: 10%;
+  display: flex;
+  justify-content: right;
+  justify-content: center;
+  z-index: -4;
+}
+
+.col-2 .iphone {
+  width: 800px;
+}
+
+.color-box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(315deg, #000000 0%, #414141 100%);
+  border-radius: 20px 0 0 20px;
+  height: 790px;
+  width: 1200px;
+  z-index: -10;
+  box-shadow: 0px 0px 10px 3px black;
+}
+
+.svgs {
+  margin: 20px;
+}
+
+.social-links {
+  padding-top: 150px;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(360deg, #030303 0%, #1f1f1f 200%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(315deg, #000000 0%, #414141 0%);
+  border-radius: 20px;
+}
+
+.big:hover {
+  width: 3.5em;
+}
+
+@media only screen and (max-width: 700px) {
+  nav ul {
+    width: 170px;
+    background: linear-gradient(315deg, #000000 0%, #414141 100%);
+    position: absolute;
+    right: 0;
+    top: 85px;
+    border-radius: 10px 0px 0px 10px;
+    z-index: 2;
+  }
+
+  nav ul li {
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 38px;
+    display: flex;
+    padding-left: 10px;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .col-2 .iphone {
+    width: 500px;
+    padding-bottom: 20px;
+  }
+
+  .row {
+    flex-direction: column-reverse;
+    margin: 380px 0px;
+  }
+
+  .social-links {
+    margin-top: -450px;
+    text-align: center;
+  }
+
+
+}
+
+.wite {
+  width: 120%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
